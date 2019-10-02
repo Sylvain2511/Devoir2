@@ -218,7 +218,11 @@ namespace Devoir2
 
         private void LvTraders_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            
+            if(lvActions.SelectedItem != null)
+            {
+                lvActions.ItemsSource = null;
+                lvActions.ItemsSource = dico[lvActions.SelectedItem.ToString()];
+            }
         }
 
         private void TxtMontantPortefeuille_TextChanged(object sender, TextChangedEventArgs e)
@@ -229,6 +233,14 @@ namespace Devoir2
                 mtTotal = Quantite * PrixAchat;               
             }
             txtMontantPortefeuille = mtTotal;
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            if(txtPrixAchat.Text != null)
+            {
+
+            }
         }
     }
 }

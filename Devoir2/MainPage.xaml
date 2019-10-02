@@ -11,7 +11,7 @@
     <Grid>
         <TextBlock HorizontalAlignment="Left" Margin="532,38,0,0" Text="Gestion portefeuille" FontSize="50" TextWrapping="Wrap" VerticalAlignment="Top" Height="74" Width="441"/>
         <TextBlock HorizontalAlignment="Left" Margin="76,144,0,0" Text="Liste des traders" FontSize="20" TextWrapping="Wrap" VerticalAlignment="Top" Height="31" Width="150"/>
-        <ListView Name="lvTraders" Margin="76,196,1281,637" SelectionChanged="LvTraders_SelectionChanged">
+        <ListView Name="lvTraders" Margin="15,187,1276,600" SelectionChanged="LvTraders_SelectionChanged">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <StackPanel Orientation="Horizontal">
@@ -40,10 +40,10 @@
 
         </ListView>
         <TextBlock HorizontalAlignment="Left" Margin="890,641,0,0" Text="Prix achat" TextWrapping="Wrap" VerticalAlignment="Top" Height="24" Width="72"/>
-        <TextBox Name="txtPrixAchat" HorizontalAlignment="Left" Margin="837,664,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="166"/>
+        <TextBox Name="txtPrixAchat" HorizontalAlignment="Left" Margin="837,664,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="166" TextChanged="TxtPrixAchat_TextChanged"/>
         <TextBlock HorizontalAlignment="Left" Margin="890,701,0,0" Text="Quantité" TextWrapping="Wrap" VerticalAlignment="Top" Height="24" Width="72"/>
         <TextBox Name="txtQuantite" HorizontalAlignment="Left" Margin="837,724,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="166"/>
-        <Button Content="Acheter" Margin="837,756,0,0" VerticalAlignment="Top" Height="35" Width="166"/>
+        <Button Content="Acheter" Margin="837,756,0,0" VerticalAlignment="Top" Height="35" Width="166" Click="Button_Click"/>
         <TextBlock HorizontalAlignment="Left" Margin="1232,144,0,0" Text="Vente" FontSize="20" TextWrapping="Wrap" VerticalAlignment="Top" Height="28" Width="73"/>
         <TextBlock HorizontalAlignment="Left" Margin="1095,199,0,0" Text="Nom de l'action" TextWrapping="Wrap" VerticalAlignment="Top" Height="24" Width="118"/>
         <TextBox Name="txtNomAction" IsEnabled="false" HorizontalAlignment="Left" Margin="1095,218,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="34" Width="296"/>
